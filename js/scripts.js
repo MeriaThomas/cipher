@@ -19,7 +19,12 @@ function lastFirst(firstLast) {
 
 function combineFunction(firstLast,lastFirst) {
   var secondFunctionResult = lastFirst(firstLast);
-  return secondFunctionResult;
+  return mySentence+secondFunctionResult;
 }
 
-alert (combineFunction(firstLast,lastFirst));
+function counterConcat(mySentence) {
+  var result = (mySentence.length/2);
+  return mySentence.charAt(result) + combineFunction(firstLast,lastFirst);
+}
+
+alert(counterConcat(mySentence));
