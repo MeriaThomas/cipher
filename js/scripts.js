@@ -27,4 +27,10 @@ function counterConcat(mySentence) {
   return mySentence.charAt(result) + combineFunction(firstLast,lastFirst);
 }
 
-alert(counterConcat(mySentence));
+function finalReverseFunction(counterConcat) {
+  var splitStr = counterConcat(mySentence).split("");
+  var splitArray = splitStr.reverse();
+  var joinArray = splitArray.join("");
+  return joinArray;
+}
+alert(finalReverseFunction(counterConcat));
